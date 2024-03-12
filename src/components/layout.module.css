@@ -1,0 +1,11 @@
+
+
+.layout {
+    font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    counter-reset: rank;
+    --ease-inout: cubic-bezier(.85,0,.07,1);
+    color: #000;
+  }

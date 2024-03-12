@@ -1,0 +1,143 @@
+/* header.module.css */
+
+.header {
+    width: 100%;
+    padding: 5px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #fff;
+  }
+  
+  .headerInner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    
+  }
+  
+  .headerTxt {
+    font-size: 10px;
+  }
+  
+  .logoAndNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 10px;
+    background: linear-gradient(to right, #e95404, #e95404, #ffba00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mainNav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  .mainNav ul {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+  }
+  
+
+  .menuItem {
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+    color: inherit;
+    display: block;
+  }
+  
+  .menuItem a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #191919;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menuItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #e18346;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+    transform-origin: bottom left;
+  }
+    
+  .menuItem:hover::after {
+    transform: scaleX(1);
+  }
+
+  .menuItem:hover a {
+    color: #e18346;
+  }
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+    .headerInner {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .headerTxt {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 8px;
+      order: 2;
+    }
+  
+    .headerTxtSeparator {
+      display: inline;
+    }
+  
+    .headerTxtSecondLine {
+      display: inline;
+    }
+  
+    .logoAndNav {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      order: 1;
+    }
+  
+    .logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+  
+    .mainNav {
+      display: none;
+    }
+  }
