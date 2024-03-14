@@ -50,3 +50,11 @@
     color: #fff;
     background-image: linear-gradient(45deg, #e95404, #e95404, #ffba00);
   }
+
+  .large {
+    width: 15rem;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 60px;
+  }

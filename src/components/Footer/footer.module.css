@@ -1,0 +1,186 @@
+:root {
+    --footer-background-color: #2A292F;
+    --footer-text-color: #fff;
+    --footer-link-color: #9d9d9d;
+    --footer-padding-horizontal: 30px;
+    --footer-icon-gap: 30px;
+    --footer-icon-size: 32px;
+    --footer-icon-size-mobile: 28px;
+    --footer-icon-gap-mobile: 10px;
+  }
+
+.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: center;
+  }
+
+
+.leftSection {
+    flex: 1; 
+    margin-right: 20px;
+  }
+    
+  .rightSection {
+    flex: 1; 
+    display: flex;
+    justify-content: space-around; 
+  }
+    
+  .subSection h3 {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  }
+
+  .footerWebsiteTitle {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: var(--footer-padding-horizontal);
+    text-decoration: none;
+    color: inherit;
+  }
+    
+  .footerSectionTitle {
+    margin-bottom: 20px;
+  }
+  
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.75rem;
+    color: var(--footer-link-color);
+  }
+    
+  .footerLinks {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+    align-items: center;
+  }
+  
+  .footerLinkItem, .footerBottomLinkItem {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    width: max-content;
+    color: inherit;
+    display: block;
+  }
+  
+  .footerLinkItem {
+    margin-bottom: 10px; 
+  }
+  
+  .footerLinkItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--footer-link-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom left;
+  }
+    
+  .footerLinkItem:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+  @media (max-width: 1024px) {
+  
+    .footerContent {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  
+    .footerWebsiteTitle {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      margin-left: 20px;
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .leftSection {
+      margin-right: 0;
+    }
+  
+    .rightSection {
+      flex-direction: column;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .subSection {
+      width: 100%;
+    }
+  
+    .footerSectionTitle {
+      font-size: 16px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .footerLinkItem {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      border-bottom: 1px solid #6e6e6e;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .footerLinkItem:hover {
+        color: #ff9945; 
+      }
+  
+    .socialIcon {
+      width: var(--footer-icon-size-mobile); 
+      height: var(--footer-icon-size-mobile); 
+      margin-right: var(--footer-icon-gap-mobile);
+    }
+  
+    .footerBottom {
+      flex-direction: column; 
+      align-items: flex-start; 
+      
+    }
+  
+    .footerLinks {
+      flex-direction: column; 
+      gap: 10px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: #fff;
+    }
+
+    .footerBottomLinkItem {
+        transition: color 0.3s ease-in-out;
+    }
+
+    .footerBottomLinkItem:hover {
+        color: #ff9945; 
+    }
+
+    .footerLinkItem::after, .footerBottomLinkItem::after {
+      display: none; 
+    }
+
+    .footerBottom p{
+        margin: 0.5rem 0;
+    }
+    
+  }
