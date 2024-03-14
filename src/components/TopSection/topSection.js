@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import * as styles from './topSection.module.css';
-import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../Button/button';
 
 const TopSection = () => {
@@ -31,10 +30,7 @@ const TopSection = () => {
         </div>
       </div>
       <div className={styles.image}>
-        <StaticImage
-          src = "../../images/haikei.png"
-          alt = "背景画像"
-        />
+        <img src= "/images/haikei.png" alt = "haikei" />
       </div>
     </section>
   );

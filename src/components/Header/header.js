@@ -24,7 +24,6 @@ const Header = () => {
         <div className={styles.headerTxt}>
           <p>
             八王子のホームページ制作・SEO対策・Web集客
-            <span className={styles.headerTxtSeparator}>  </span>
             <span className={styles.headerTxtSecondLine}>ホームページで売上・集客アップを支援</span>
           </p>
         </div>

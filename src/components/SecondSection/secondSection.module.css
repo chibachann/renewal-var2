@@ -9,6 +9,19 @@
     margin-bottom: 2rem;
 }
 
+.reasons em {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.reasons h2 {
+    font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
 .reasonItems {
     display: flex;
     justify-content: space-around;
@@ -17,6 +30,12 @@
 
 .reasonItem {
     width: 45%;
+}
+
+.reasonItem h3 {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 600;
+
 }
 
 .reasonContent {
@@ -31,6 +50,7 @@
 }
 
 .reasonTitle {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -44,9 +64,9 @@
 }
 
 .orange {
-    color: #f56d24;
+    color: #ff5300;
     display: inline;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
 .reasonNumber {
@@ -56,6 +76,7 @@
 }
 
 .reasonTitle h3 {
+    
     font-size: 1.25rem;
     margin: 0;
 }
@@ -64,4 +85,74 @@
     font-size: 0.8rem;
     line-height: 1.5;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .reasons {
+        background-color: rgba(235, 235, 235, 0.486);
+        height: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reasons em {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reasons h2 {
+        font-size: 1.1rem;
+        text-decoration: underline;
+        text-decoration-color: rgb(250, 194, 11);
+        text-decoration-thickness: 0.3em;
+        text-underline-offset: 0.1em;
+        font-weight: bold;
+      }
+    
+    .reasons span {
+        display: block;
+    }
+
+    .reasonItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasonItem {
+        width: 90vw;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .reasonTitle {
+        font-size: 1.5rem;
+    }
+
+    .orange {
+        font-size: 1.2rem;
+    }
+
+    .reasonNumber {
+        font-size: 1.5rem;
+    }
+
+    .reasonTitle h3 {
+        font-size: 1rem;
+    }
+
+    .reasonContent p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
+    .reasonItem img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

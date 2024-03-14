@@ -87,7 +87,7 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #e18346;
+    background-color: #e95404;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
     transform-origin: bottom left;
@@ -98,7 +98,7 @@
   }
 
   .menuItem:hover a {
-    color: #e18346;
+    color: #e95404;
   }
   
   
@@ -107,6 +107,7 @@
     .headerInner {
       flex-direction: row;
       align-items: flex-start;
+      padding: 0;
     }
   
     .headerTxt {
@@ -116,12 +117,8 @@
       order: 2;
     }
   
-    .headerTxtSeparator {
-      display: inline;
-    }
-  
     .headerTxtSecondLine {
-      display: inline;
+      display: block;
     }
   
     .logoAndNav {
