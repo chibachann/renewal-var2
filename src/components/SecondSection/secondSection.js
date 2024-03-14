@@ -12,9 +12,9 @@ const SecondSection = () => {
             </div>
             <div className={styles.reasonItems}>
                 <div className={styles.reasonItem}>
-                    <div className={styles.reasonImage}>
+                    
                         <StaticImage src="../../images/haikei.png" alt="背景画像" className={styles.largeImage} />
-                    </div>
+                    
                     <div className={styles.reasonTitle}>
                         <span className={styles.reasonNumber}>01</span>
                         <h3>
@@ -30,9 +30,9 @@ const SecondSection = () => {
                     </div>
                 </div>
                 <div className={styles.reasonItem}>
-                    <div className={styles.reasonImage}>
+                    
                         <StaticImage src="../../images/haikei.png" alt="背景画像" className={styles.largeImage} />
-                    </div>
+                    
                     <div className={styles.reasonTitle}>
                         <span className={styles.reasonNumber}>02</span>
                         <h3>
@@ -47,9 +47,9 @@ const SecondSection = () => {
             </div>
             <div className={styles.reasonItems}>
                 <div className={styles.reasonItem}>
-                    <div className={styles.reasonImage}>
+                    
                         <StaticImage src="../../images/haikei.png" alt="背景画像" className={styles.largeImage} />
-                    </div>
+                    
                     <div className={styles.reasonTitle}>
                         <span className={styles.reasonNumber}>01</span>
                         <h3>
@@ -65,9 +65,9 @@ const SecondSection = () => {
                     </div>
                 </div>
                 <div className={styles.reasonItem}>
-                    <div className={styles.reasonImage}>
-                        <StaticImage src="../../images/haikei.png" alt="背景画像" className={styles.largeImage} />
-                    </div>
+                    
+                    <StaticImage src="../../images/haikei.png" alt="背景画像" className={styles.largeImage} />
+                    
                     <div className={styles.reasonTitle}>
                         <span className={styles.reasonNumber}>02</span>
                         <h3>

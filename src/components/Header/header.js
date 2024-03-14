@@ -35,7 +35,7 @@ const Header = () => {
           </div>
 
           <nav className={styles.mainNav}>
-            <ul className={styles.menuList}>
+            <ul>
               {menuItems.map((item, index) => (
                 <li key={index} className={styles.menuItem}>
                   <Link to={item.path}>{item.label}</Link>
