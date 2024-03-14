@@ -1,27 +1,32 @@
-/* src/components/TopSection/topSection.module.css */
+/* src/components/FourthSection/fourthSection.module.css */
 
 .topSection {
   display: flex;
+  position: relative;
   align-items: stretch;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .content {
   flex: 1;
   display: flex;
+  position: relative;
+  z-index: 1;
   flex-direction: column;
-  color: #000;
+  color: #fff;
   justify-content: center;
   text-align: center;
-  margin-right: 2rem;
+}
+
+.content span {
+  display: block;
 }
 
 .title {
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 1rem 0;
 }
@@ -62,17 +67,42 @@
   justify-content: center;
 }
 
-
-
 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
 }
 .image img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 0 0 0 50px;
+  filter: blur(10px) brightness(0.7);
+}
+
+.explainWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.explain {
+  max-width: 80%;
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.explain p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -89,7 +119,7 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .description {
@@ -126,6 +156,15 @@
     height: auto;
     object-fit: cover;
     border-radius: 0;
-    filter: blur(10px);
+    filter: blur(10px) brightness(0.7);
+  }
+
+  .explain {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .explain p {
+    font-size: 1rem;
   }
 }

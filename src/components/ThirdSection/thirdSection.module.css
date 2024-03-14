@@ -1,0 +1,65 @@
+.thirdSection {
+    padding: 2rem 0;
+}
+
+.content {
+    margin: 1rem 3rem;
+}
+
+.content h2 {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    line-height: 1.3;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.1em;
+    margin: 1rem 0;
+}
+
+.content p {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.content h3 {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.1em;
+}
+
+.content span {
+    display: block;
+}
+
+.content span.marker {
+    display: inline;
+    background-color: rgb(255, 217, 0);
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    
+    .content {
+        margin: 1rem 1rem;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .content h3 {
+        font-size: 1.1rem;
+    }
+
+
+  }
