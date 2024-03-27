@@ -4,7 +4,7 @@ import * as React from 'react';
 import * as styles from './fourthSection.module.css';
 import Button from '../Button/button';
 
-const TopSection = () => {
+const FourthSection = () => {
   return (
     <section className={styles.topSection}>
       <div className={styles.content}>
@@ -36,4 +36,4 @@ const TopSection = () => {
   );
 };
 
-export default TopSection;
+export default FourthSection;

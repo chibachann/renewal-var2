@@ -1,0 +1,182 @@
+/* src/components/FlowChart/flowChart.module.css */
+.flowChart {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    padding: 0 40px;
+  }
+  
+  .title {
+    text-align: left;
+  }
+  
+  .title h1 {
+    display: flex;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    align-items: baseline;
+  }
+  
+  .titleEn {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .titleJp {
+    font-size: 1.5rem;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .step {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    background: #EEEEEE;
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #EEEEEE;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 40px;
+  }
+  
+  .step:last-child {
+    margin-right: 0;
+  }
+  
+  .step:after, .step:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+  }
+  
+  .step:after {
+    border-color: rgba(238, 238, 238, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 13px;
+    border-right-width: 13px;
+    margin-top: -10px;
+    border-left-color: #EEEEEE;
+  }
+  
+  .step:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    border-left-width: 19px;
+    border-right-width: 19px;
+    margin-top: -15px;
+    margin-left: 5px;
+    border-left-color: #EEEEEE;
+  }
+  
+  .step:last-child:after, .step:last-child:before {
+    display: none;
+  }
+  
+  .step h3 {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    margin-top: 0;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .step h3::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .step:nth-child(1) h3::before { content: '1'; }
+  .step:nth-child(2) h3::before { content: '2'; }
+  .step:nth-child(3) h3::before { content: '3'; }
+  .step:nth-child(4) h3::before { content: '4'; }
+  
+  .step ul {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    list-style: none;
+  }
+  
+  .step li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .step li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 2px solid #000;
+  }
+
+  /* src/components/FlowChart/flowChart.module.css */
+/* ... */
+
+@media (max-width: 768px) {
+    .title h1{
+        flex-direction: column;
+    }
+
+    .titleEn {
+        font-size: 2rem;
+    }
+
+    .titleJp {
+        font-size: 1rem;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .step {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        background: #EEEEEE;
+        color: #000;
+        padding: 20px;
+        border: 5px solid #EEEEEE;
+      }
+    
+      .step:after, .step:before {
+        display: none;
+      }
+    
+      .step ul {
+        padding-left: 20px;
+      }
+  }
+
